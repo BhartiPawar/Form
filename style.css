@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(34, 46, 64, 1) 0%,
+    rgba(81, 195, 184, 1) 100%
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin-top: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #b6ede3;
+  font-weight: 400;
+}
+
+#form {
+  border-radius: 6px;
+  height: 85vh;
+  width: 30vw;
+  margin: 2rem auto;
+  padding: 10px 0px 0px 0px;
+  box-shadow: 0px 50px 100px 0px rgba(30, 30, 30, 0.4);
+  background: linear-gradient(
+    42deg,
+    rgba(42, 46, 54, 1) 0%,
+    rgba(97, 107, 125, 1) 100%
+  );
+}
+
+.field {
+    margin: 20px 0px;
+}
+
+.info {
+    width: 80%;
+    display: block;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 2rem 1rem 0.55rem;
+}
+
+input#fname, input#email, input#pass, input#conPass {
+    color: black;
+}
+
+
+input::placeholder, 
+.btn {
+  font-weight: bold;
+  color: rgba(81, 195, 184, 1);
+}
+
+form-last-element {
+  margin-bottom: 0;
+}
+
+p {
+    margin-top: 26px;
+    text-align: center;
+    color: rgba(81, 195, 184, 1)
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+.errMsg {
+  color: grey;
+  margin-left: 40px;
+  font-size: .7rem;
+  margin-top: 3px;
+}
+
+#logform {
+  border-radius: 6px;
+  height: 50vh;
+  width: 30vw;
+  margin: 2rem auto;
+  padding: 10px 0px 0px 0px;
+  box-shadow: 0px 50px 100px 0px rgba(30, 30, 30, 0.4);
+  background: linear-gradient(
+    42deg,
+    rgba(42, 46, 54, 1) 0%,
+    rgba(97, 107, 125, 1) 100%
+  );
+}
+
+
+/*-----------Responsive*/
+
+@media (min-width: 300px) and (max-width: 700px) {
+   h1 {
+  font-size: 2.5rem;
+}
+
+#form {
+  width: 70%;
+  padding: 15px 0px 0px 0px;
+}
+
+.field {
+    margin: 10px 0px;
+}
+
+.info {
+    padding: .8rem 1rem .8rem 0.55rem;
+}
+.errMsg {
+  margin-left: 50px;
+}
+}
